@@ -48,11 +48,15 @@
                     document.getElementById('area').innerText=data.name;
                     const temperature=document.getElementById('temperature').innerText=Math.ceil(data.main.temp);
                     const weather=document.getElementById('weather').innerText=data.weather[0].main;
+                    document.getElementById('image').setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+ 
+                            console.log(temperature, weather);
                     //const image=document.getElementById('image')
                     console.log(temperature, weather);
                     
                             
                })
+               
 
                })
                     
